@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+            function calcularPrecio(impuesto,suma){
+                var precio=prompt("Precio del producto");
+                if(isNaN(precio)){
+                alert("No has introducido un numero");
+                return false;
+                }else{
+                var precioConIVA=parseFloat(precio)*(1+ impuesto /100);
+                alert("El precio con el impuesto es "+precioConIVA);
+                return true;
+                }
+            }
+            var impuesto=prompt("Cual es el impuesto a aplicar");
+            calcularPrecio(impuesto);
+
+        </script>
+    </body>
+</html>
