@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trabajando con tablas</title> 
+    </head>
+    <body>
+        <h1>Horario de clase</h1>
+        <hr>
+        <table border = "1">
+
+            <!-- Primero las filas representadas por tr -->
+            <!-- La primera fila, al ser titulo, representada por th cada columna -->
+            <!-- La segunda fila al no ser titulo, representada por td cada columna -->
+
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+
+            <tr>
+                <td>LM</td> 
+                <td>SI</td>
+                <td>BD</td>
+            </tr>
+
+            <tr>
+                <td>LM</td>
+                <td>PR</td>
+                <td>PR</td>
+            </tr>
+
+            <tr>
+                <td>FOL</td>
+                <td>BD</td>
+                <td>SI</td>
+            </tr>
+
+        </table>
+
+            <br>
+            <br>
+            <br>
+
+        <table border = "3">
+    
+            <tr>
+                <th>Lunes</th>
+                 <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+    
+              <tr>
+                <td rowspan = "2">LM</td>
+                   <td>SI</td>
+                   <td>BD</td>
+            </tr>
+    
+               <tr>
+                <td colspan = "2">PR</td>
+            </tr>
+    
+             <tr>
+                <td>FOL</td>
+                  <td>BD</td>
+                <td>SI</td>
+            </tr>            
+
+        </table>
+    </body>
+</html>

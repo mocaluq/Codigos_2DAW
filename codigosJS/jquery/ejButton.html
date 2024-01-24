@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página con jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // El código jQuery se coloca aquí
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").text("¡Hola, esto ha sido cambiado con jQuery!");
+      });
+    });
+  </script>
+</head>
+<body>
+
+<button>Cambiar texto</button>
+<!--PODRIA PONER ATRIBUTOS AL BUTTON
+<button id="miBoton" class="botonPersonalizado">Cambiar texto</button>-->
+
+<p>Texto original</p>
+
+</body>
+</html>

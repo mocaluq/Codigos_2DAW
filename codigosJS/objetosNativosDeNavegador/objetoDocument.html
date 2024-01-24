@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de objeto document</title>
+</head>
+<body>
+    <h3>Sobre Documento</h3>
+    <script>
+      
+      //Trabajaf sobre elemento Document
+      var doctypeObj = document.doctype;
+
+      console.log(
+        "doctypeObj.name: " + doctypeObj.name + "\n" +
+        "doctype.obj.internalSubset: " + doctypeObj.internalSubset + "\n" +
+        "doctype.Obj.publicId: " + doctypeObj.publicId + "\n" + 
+        "doctypeObj.systemId :" + doctypeObj.systemId                  
+      );
+
+      //Write nos permite interactuar con nuestro documento cargado
+      document.write("<br><p>Este es un ejemplo de write");
+      
+      var headerH3 = document.getElementsByTagName("H3").item(0);
+
+      headerH3.firstChild.data = "Documento dinámico";
+
+    </script>
+</body>
+</html>

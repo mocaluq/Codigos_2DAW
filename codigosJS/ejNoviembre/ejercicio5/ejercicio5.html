@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+            /* Realizar una página con un script que calcule el valor
+             de la letra de un número de DNI (Documento nacional de indentidad)*/
+
+            var boolean = true;
+
+            while(boolean == true){
+                var numeroDNI = prompt("Introduzca su DNI");
+
+                if(numeroDNI == null){//si damos a cancelar se cierra el bucle
+                    boolean = false;
+
+                }else if(numeroDNI !== null){
+                    
+                    if (isNaN(numeroDNI) || numeroDNI.length !== 8 || numeroDNI < 0 || numeroDNI > 99999999) {
+                        /*EL EJERCICIO DICE QUE EL NUM DEBE ESTAR ENTRE O Y 99999999 PERO SI PONGO POR EJ 234 ME
+                         LO DARIA COMO DNI VALIDO Y LOS DNI TIENEN 8 DIGITOS*/
+
+                        alert("Introduzca un número de DNI válido");
+                    }else{
+                    var modulo = numeroDNI % 23;
+
+                    var tablaLetras = "TRWAGMYFPDXBNJZSQVHLCKE";//almacenamos las letras posibles en una variable
+                    var obtenerLetra = tablaLetras.charAt(modulo);//modulo indicara la posicion de la letra y se almacena en obtenerLetra
+                        alert("DNI Completo: " + numeroDNI + obtenerLetra);
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>

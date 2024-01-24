@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+            /*Realiza un script que pida números hasta que se 
+            pulse “cancelar”. Si no es un número deberá indicarse 
+            con un «alert» y seguir pidiendo. Al salir con “cancelar” 
+            deberá indicarse la suma total de los números introducidos.*/
+
+           var sumNum = 0; 
+           var boolean = true;
+
+           while(boolean === true){
+            var numero = prompt("Introduce un numero");
+
+            if(!isNaN(parseFloat(numero))){//si es un numero lo que hemos introducido, convierte la cadena de texto a número y lo va sumando en sumNum
+                sumNum += parseFloat(numero);
+            }
+            if(numero == null){ //al darle cancelar seria null porque no introducimos ningún valor
+                alert("La suma de todos los numero es: " + sumNum);
+                boolean = false;
+            }
+            else if(isNaN(parseFloat(numero))){
+                alert("Introduce un numero valido");
+            }
+
+
+           }
+            
+
+           /*OTRA FORMA DE COMPROBAR SI EL VALOR INTRODUCIDO ES O NO UN NúMERO
+           if (Number(numero) == numero) {
+             console.log("Es un número");
+            } else {
+             console.log("No es un número");
+            }*/
+
+            
+        </script>
+    </body>
+</html>

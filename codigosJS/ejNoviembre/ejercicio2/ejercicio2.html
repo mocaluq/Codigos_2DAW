@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+            /*Crea una web con html y JavaScript, que te pida la 
+            edad y muestre la calificación según la nota*/
+
+            var nota = prompt("Introduzca su nota"); /*Para entender mejor el ejercicio le pido que introduzca
+                                                     la nota, ya que la edad no tendría porque influir en la calificación*/
+
+            if(nota >= 0 && nota < 3){ //Depende de en el rago que se encuentre la nota se asigna la calificación
+                alert("Muy insuficiente");
+            }else if(nota >=3 && nota <5){
+                alert("Insuficiente");
+            }else if(nota == 5){
+                alert("Suficiente");
+            }else if(nota >=6 && nota <= 7){
+                alert("Bien");
+            }else if(nota > 7 && nota <= 9){
+                alert("Notable");
+            }else if(nota == 10){
+                alert("Sobresaliente");
+            }
+            else{
+                alert("Nota introducida no valida");// en caso de introducir un numero no comprendido entre 0 y 10 
+            }
+
+
+        </script>
+    </body>
+</html>

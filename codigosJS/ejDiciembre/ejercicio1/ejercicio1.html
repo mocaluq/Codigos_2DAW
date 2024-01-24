@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            /*Ejercicio 1: Crea una web que salude con “Buenos días”, si la hora 
+            en la que se carga la web está entre las 6:00:00 y 11:59:59, que diga
+            “Buenas tardes” si la hora en la que se carga se encuentra las 12:00:00 
+            y las 19:59:59, y “Buenas noches” si no se encuentra entre esos rangos de fechas.*/
+
+
+            //Creo tres variables para almacenar la hora, los minutos y segundos
+            var hora = new Date().getHours(); //Creo un objeto Date y utilizo el metodo .getHours()
+            var minutos = new Date().getMinutes(); //Creo un objeto Date y utilizo el metodo .getMinutes()
+            var segundos = new Date().getSeconds(); //Creo un objeto Date y utilizo el metodo .getSeconds()
+
+            /*Con los condicionales pongo el rango de las horas donde me dirá Buenos dias,
+             Buenas tardes o Buenas noches dependiendo de la hora que sea*/
+            if(hora <12 && hora >= 6){
+                alert("Buenos días");
+            }
+            else if(hora >= 12 && hora < 20){
+                alert("Buenas tardes");
+            }
+            else{
+                alert("Buenas noches");
+            }
+
+            //Aqui me dará la hora actual
+            alert(hora + ":" + minutos + ":" + segundos);
+
+
+            //OTRA FORMA DE HACERLO
+            //De esta manera lo hacemos con un encabezado en la página en lugar de con un alert
+
+            /*var hora = new Date().getHours();
+            var minutos = new Date().getMinutes();
+            var segundos = new Date().getSeconds();
+
+            var saludar;
+
+            if (hora < 12 && hora >= 6) {
+                saludar = "Buenos días";
+            } else if (hora >= 12 && hora < 20) {
+                saludar = "Buenas tardes";
+            } else {
+                saludar = "Buenas noches";
+            }
+
+            //Escribimos un encabezado en nuestra web para mostrar el mensaje y la hora
+            document.body.innerHTML = "<h1>" + saludar + "</h1><h2>" + hora + ":" + minutos + ":" + segundos + "</h2>";*/
+        
+
+        </script>
+    </body>
+    </html>

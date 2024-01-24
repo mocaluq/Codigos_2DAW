@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Callbacks</title>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+$("#pilallamadas").click(function(event){
+event.preventDefault();
+$("#micapa").fadeOut(3000);
+$("#micapa").css({top: 400, left:300});
+$("#micapa").fadeIn(3000);
+});
+});
+function muestra(){
+}
+</script>
+</head>
+<body>
+<div id="micapa" style="background-color: #cc7700; color:f0f;
+padding:10px; width: 300px; height: 130px; position: absolute; top: 10px;
+left: 500px;">
+<ul>
+<li>Probaremos el callback</li>
+<li>Se ejecutarán unas funciones detrás de otras</li>
+<li>Sirva, para encadenar efectos</li>
+</ul>
+</div>
+<br>
+<br>
+<a href="#" id="pilallamadas">Realizar cambios sin callback</a>
+<br>
+<!--(Se hacen con una secuencia de llamadas a funciones)-->
+</body>
+</html>

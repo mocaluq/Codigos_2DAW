@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+            /*Realiza un script que pida cadenas de texto hasta que
+             se pulse “cancelar”. Al salir con “cancelar” deben mostrarse
+             todas las cadenas concatenadas con un guión -*/
+
+           var sumCad = ""; 
+           var boolean = true;
+
+           while(boolean === true){
+            var texto = prompt("Introduce una cadena de texto");
+
+            if(isNaN(parseFloat(texto)) && texto !== null){
+               
+               if (sumCad !== "") { //si la cadena no esta vacia introducimos guión, con esto evitamos introducorlo antes de la primera cadena 
+                sumCad += "-";
+            }
+            sumCad += texto; 
+
+            }
+            if(texto == null){ //al darle cancelar seria null porque no introducimos ningun valor
+                alert("Cadenas concatenadas: " + sumCad);
+                boolean = false;
+            }
+            else if(!isNaN(parseFloat(texto))){ //Con esto evitamos que se pueda introducir un numero
+                alert("Introduce un texto valido");
+            }
+
+
+           }
+
+        </script>
+    </body>
+</html>

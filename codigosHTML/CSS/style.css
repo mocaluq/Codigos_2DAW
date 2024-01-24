@@ -1,0 +1,7 @@
+.imagen{
+    width: 700px; /*Anchura de la imagen*/
+    height: 500px; /*Altura de la imagen*/
+    border-radius: 25px; /*Redondear bordes de la imagen*/
+    box-shadow: 0 0 20px rgb(0, 0, 0,5); /*Poner sombra a la imagen*/
+    justify-content: center;
+}

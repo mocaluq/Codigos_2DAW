@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de objeto navigator</title>
+</head>
+<body>
+    <script>
+        // Obtener la cadena del agente de usuario (User-Agent)
+        var userAgent = navigator.userAgent;
+
+        // Obtener el codigo de nombre del navegador
+        var appCodeName = navigator.appCodeName;
+
+        // Obtener la plataforma (sistema operativo) del usuario
+        var userPlatform = navigator.platform;
+
+        // Verificar si las cookies están habilitadas
+        var areCookiesEnabled = navigator.cookieEnabled;
+
+        //obtener el nombre del navegador
+        var nombreNavegador = navigator.appName;
+
+        //obtener la version del navegador
+        var versionNavegador = navigator.appVersion;
+
+        // Mostrar la información en la consola
+        alert("User Agent: " + userAgent);
+        alert("codigo de nombre: " + appCodeName);
+        alert("Plataforma: " + userPlatform);
+        alert("Cookies habilitadas: " + areCookiesEnabled);
+        alert("nombre del navegador: " + nombreNavegador);
+        alert("version del navegador: " + versionNavegador);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Agregar contenido</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#text").text("HOLA MUNDO");
+            $("#html").html("<i>Texto en italica</i>");
+            $(".append").append(" Contenido al final");
+            $(".prepend").prepend("Contenido al principio ");
+            $("input[type='text']").val("Agregado contenido")
+        });
+    </script>
+</head>
+<body>
+    <div id="text"></div>
+    <div id="html"></div>
+    <div class="append">Tengo contenido</div>
+    <div class="prepend">Tengo contenido</div>
+    <input type="text">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!--ESTE CODIGO ESTA MODIFICADONO ES EL ORIGINAL DEL TEMA 4 PORQUE NO FUNCIONA-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primer script con jQuery</title>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // Tu código jQuery aquí
+    });
+  </script>
+</head>
+<body>
+  <div id="capa" style="padding: 10px; background-color: #af9000">Haz clic en un botón</div>
+  <br>
+  <form>
+    <input type="button" value="Botón A" onclick="$('#capa').html('Has hecho clic en el botón <b>A</b>')">
+    <input type="button" value="Botón B" onclick="$('#capa').html('Recibido un clic en el botón <b>B</b>')">
+  </form>
+</body>
+</html>

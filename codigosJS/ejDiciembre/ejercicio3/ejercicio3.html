@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 3</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            /*Ejercicio 3: Realiza un script que muestre un reloj en pantalla con
+             fecha y hora y que se actualice cada segundo. Función setTimeout()*/
+
+            //Creo la funcion reloj 
+            function reloj(){
+            var dia = new Date().getDate();//Creamos una variable para almacenar el dia
+            var mes = new Date().getMonth()+1;//Creamos una variable para almacenar el mes y sumamos uno, ya que sino siempre indicaría un mes menos del actual
+            var anio = new Date().getFullYear();//Creamos una variable para almacenar el año
+            var hora = new Date().getHours(); //Creamos una variable para almacenar la hora
+
+            //Para que quede mejor visualmente cuando la hora sea inferior a 10 se añadirá un cero delante, e igual con minutos y segundos
+            if(hora < 10){
+                hora = "0" + hora;
+            }
+
+            var minutos = new Date().getMinutes(); //Creamos una variable para almacenar los minutos
+
+            if(minutos < 10){
+                minutos = "0" + minutos;
+            }
+
+            var segundos = new Date().getSeconds(); //Creamos una variable para almacenar los segundos
+            
+            if(segundos < 10){
+                segundos = "0" + segundos;
+            }
+
+            /*Modificamos la web para añadir la hora en un encabezado h1, por eso utilizamos document.body.innerHTML
+             en lugar de document.write para que se vaya modificando y que no se escriba la hora cada vez que pase un segundo*/
+            document.body.innerHTML = "<h1>" + dia + "/" + mes + "/" + anio + "<br>" + hora + ":" + minutos + ":" + segundos + "</h1>";
+
+            /*Utilizamos la funcion setTimeout para cargar la funcion reloj cada segundo, para ello le pasamos entre parentesis
+             la funcion, es decir reloj y 1000 milisegundos que serian 1 segundo*/
+            setTimeout(reloj, 1000); 
+            }
+
+            //Llamamos a la funcion para inicializarla
+            reloj();
+
+
+        </script>
+    </body>
+    </html>

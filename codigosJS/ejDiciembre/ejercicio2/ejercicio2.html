@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+             /*Ejercicio 2: Realiza un script que escriba en el documento la 
+                fecha y hora actual. La salida deberá tener el siguiente formato:
+                Hoy es martes, 28 de Febrero de 2018 y son las 14:32 horas.*/
+
+            //Creamos una variable para el dia de la semana
+            var diaS = new Date().getDay();
+
+            /*Necesitamos un switch para asignar el nombre del dia de la semana, ya que el
+             metodo .getDay() nos da el numero correspondiente al dia*/
+            switch(diaS){
+                case 0:
+                    diaS = "Domingo";
+                    break;
+                case 1:
+                    diaS = "Lunes";
+                    break;
+                case 2:
+                    diaS = "Martes";
+                    break;
+                case 3:
+                    diaS = "Miércoles";
+                    break;
+                case 4:
+                    diaS = "Jueves";
+                    break;
+                case 5:
+                    diaS = "Viernes";
+                    break;
+                case 6: 
+                    diaS = "Sábado";
+                    break;
+            }
+
+            //Almacenamos el dia del mes en una variable mediante el metodo .getDay()
+            var diaM = new Date().getDate();
+
+            //Almacenamos el mes en una variable mediante el metodo .getMonth()
+            var mes = new Date().getMonth();
+            switch(mes){
+                case 0:
+                    mes = "Enero";
+                    break;
+                case 1:
+                    mes = "Febrero";
+                    break;
+                case 2:
+                    mes = "Marzo";
+                    break;
+                case 3:
+                    mes = "Abril";
+                    break;
+                case 4:
+                    mes = "Mayo";
+                    break;
+                case 5:
+                    mes = "Junio";
+                    break;
+                case 6: 
+                    mes = "Julio";
+                    break;
+                case 7:
+                    mes = "Agosto";
+                    break;
+                case 8:
+                    mes = "Septiembre";
+                    break;
+                case 9: 
+                    mes = "Octubre";
+                    break;
+                case 10:
+                    mes = "Noviembre";
+                    break;
+                case 11:
+                    mes = "Diciembre";
+                    break;
+            }
+
+            //Almacenamos el año en una variable mediante el metodo .getFullYear()
+            var anio = new Date().getFullYear();
+
+            //Almacenamos la hora en una variable mediante el metodo .getHours()
+            var hora = new Date().getHours();
+
+            //Para que quede mejor visualmente cuando la hora sea inferior a 10 se añadirá un cero delante, e igual con los minutos
+            if(hora < 10){
+                hora = "0" + hora;
+            }
+             
+            //Almacenamos los minutos en una variable mediante el metodo .getMinutes()
+            var minutos = new Date().getMinutes();
+            
+            if(minutos < 10){
+                minutos = "0" + minutos;
+            }
+
+            //Escribimos un encabezado en nuestra web para mostrar la fecha y hora
+            document.write("<h1>" + "Hoy es " + diaS + ", " + diaM + " de " + mes + " de " + anio + " y son las " + hora + ":" + minutos + " horas" + "</h1>");
+            
+        </script>
+    </body>
+    </html>
