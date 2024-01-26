@@ -12,15 +12,16 @@ function obtenerCodigoPostal() {
     for (var ciudad in ciudades) { //Recorremos el array ciudades
         //En la condición paso la ciudad en cada itinerancia a minuscula 
         if (busqueda === ciudad.toLowerCase()) { //Comparamos si es igual la ciudad que introducimos en el label que la ciudad de cada itinerancia
-            var resultado = document.getElementById("result"); //Creo una variable donde almacenaré el resultado que se mostrará
-            return resultado.textContent = "Ciudad: " + ciudad + ", Código postal: " + ciudades[ciudad]; 
-           // Salir del bucle si se encuentra la ciudad y mostramos la ciudad junto con el código postal
+            //var resultado = document.getElementById("result"); //Creo una variable donde almacenaré el resultado que se mostrará
+            //return resultado.textContent = "Ciudad: " + ciudad + ", Código postal: " + ciudades[ciudad]; 
+           document.write("<h1>Ciudad: " + ciudad + ", Código postal: " + ciudades[ciudad] + "</h1>");
+            // Salir del bucle si se encuentra la ciudad y mostramos la ciudad junto con el código postal
         }
     }
     
     // Si no se encuentra la ciudad introducida mostrará un mensaje de ciudad no encontrada
     var resultado = document.getElementById("result");
-    resultado.textContent = "Ciudad no encontrada";
+    //resultado.textContent = "Ciudad no encontrada";
 }
 
 
