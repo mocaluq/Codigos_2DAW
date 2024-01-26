@@ -4,17 +4,21 @@ Crea un texto y un botón que ponga buscar que muestre el CP y el nombre de la c
 que coincida o contenga el texto del campo creado. No importan las mayúsculas y minúsculas en la búsqueda. */
 
 //Creación del array con ciudades y códigos postales
-var ciudades = {"Estepona":296980, "San Fernando":11100, "Malaga":29530, "Murcia":30004};
-
+//var ciudades = {"Estepona":296980, "San Fernando":11100, "Malaga":29530, "Murcia":30004};
+var ciudades = {29680:"Estepona", 11100:"San Fernando", 29530:"Malaga", 30004:"Murcia"};
 function obtenerCodigoPostal() { 
     var busqueda = document.getElementById("buscar").value.toLowerCase();//Almaceno en una variable el valor introducido en el label
     
-    for (var ciudad in ciudades) { //Recorremos el array ciudades
+    for (var codigoPostal in ciudades) { //Recorremos el array ciudades
+        var ciudad = ciudades[codigoPostal].toLowerCase();
         //En la condición paso la ciudad en cada itinerancia a minuscula 
-        if (busqueda === ciudad.toLowerCase()) { //Comparamos si es igual la ciudad que introducimos en el label que la ciudad de cada itinerancia
-            var resultado = document.getElementById("result"); //Creo una variable donde almacenaré el resultado que se mostrará
-            return resultado.textContent = "Ciudad: " + ciudad + ", Código postal: " + ciudades[ciudad]; 
+        if (busqueda === ciudad) { //Comparamos si es igual la ciudad que introducimos en el label que la ciudad de cada itinerancia
+            var resultado = document.getElementById("result"); //Creo una variable donde almacenaré el resultado que se mostrará en un parrafo
+            return resultado.textContent = "Ciudad: " + ciudades[codigoPostal] + ", Código postal: " + codigoPostal; 
            // Salir del bucle si se encuentra la ciudad y mostramos la ciudad junto con el código postal
+           
+           /*si no hubiese creado un elemento p en el index3 podría mostrar el resultado con: 
+                    document.write("Ciudad: " + ciudades[codigoPostal] + ", Código postal: " + codigoPostal)*/
         }
     }
     
