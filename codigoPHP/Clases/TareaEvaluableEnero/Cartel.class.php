@@ -7,7 +7,7 @@ class Cartel extends Carta{
     private $efecto;
     private $mensaje;
 
-    public function __constructor($borde, $color, $efecto, $mensaje){
+    public function __construct($borde, $color, $efecto, $mensaje){
         $this->borde = $borde;
         $this->color = $color;
         $this->efecto = $efecto;

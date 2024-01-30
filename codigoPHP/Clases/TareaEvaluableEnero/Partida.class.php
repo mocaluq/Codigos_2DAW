@@ -5,7 +5,7 @@
         private $dia;
         private $etapa;
 
-        public function __constructor($dia,$etapa){
+        public function __construct($dia,$etapa){
             $this->dia = $dia;
             $this->etapa = $etapa;
         }

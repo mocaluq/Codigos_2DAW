@@ -5,7 +5,7 @@ class Carta extends Jugador{
     private $tipo;
     private $puntos;
 
-    public function __constructor($tipo, $puntos){
+    public function __construct($tipo, $puntos){
 
         $this->tipo = $tipo;
         $this->puntos = $puntos;
