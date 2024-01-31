@@ -4,10 +4,17 @@
 
         private $dia;
         private $etapa;
+        private $arrayVerCartas;
+        private $arrayCartasRival;
+        private $arrayCartasTienda;
 
         public function __construct($dia,$etapa){
             $this->dia = $dia;
             $this->etapa = $etapa;
+            $this->arrayVerCartas = [];
+            $this->arrayCartasRival = [];
+            $this->arrayCartasTienda = [];
+
         }
 
         public function getDia(){
@@ -39,15 +46,15 @@
         }
 
         public function verCartas(){
-
+            return this->arrayVerCartas;
         }
 
         public function verCartasRival(){
-            
+            return this->$arrayCartasRival;
         }
 
         public function verCartasTienda(){
-            
+            return this->$arrayCartaTienda;
         }
 
 
