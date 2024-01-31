@@ -7,8 +7,6 @@ include('Carta.php');
 include('Partida.php');
 include('Cartel.php');
 
-// Aquí puedes usar las clases como lo necesites
-
 // Crear una instancia de Partida
 $partida = new Partida(1, enEtapa::compra);
 
@@ -17,7 +15,7 @@ $partida->Jugar();
 $partida->VerCartas();
 // ...
 
-// Crear una instancia de Jugador (puedes tener clases concretas que heredan de Jugador)
+// Crear una instancia de Carta 
 $carta = new Carta("as", 5);
 $carta->Jugar();
 ?>
