@@ -21,11 +21,14 @@
         for ($i = 0; $i < $longitudArray; $i++) {
          $producto = $arrayProductos[$i];
 
-        //Si la categoría es igual a la categoriaSeleccionada me la devuelve
-        if ($producto['categoria'] == $categoria) {
-        echo '<li>' . $producto['nombre'] . '</li>';
+            //Si la categoría es igual a la categoriaSeleccionada me la devuelve
+            if ($producto['categoria'] == $categoria) {
+                echo '<li>' . $producto['nombre'] . '</li>';
+            }
         }
-        }
+
+        echo "producto de la posicion 0"; 
+        print_r($arrayProductos[0]);
         
         ?>
 
