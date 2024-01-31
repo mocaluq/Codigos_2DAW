@@ -18,16 +18,32 @@ class Cartel extends Carta{
         return $this->borde;
     }
 
+    public function setBorde($borde){
+        return $this->borde = $borde;
+    }
+
     public function getColor(){
         return $this->color;
+    }
+
+    public function setColor($color){
+        return $this->color = $color;
     }
     
     public function getEfecto(){
         return $this->efecto;
     }
 
+    public function setEfecto($efecto){
+        return $this->efecto = $efecto;
+    }
+
     public function getMensaje(){
         return $this->mensaje;
+    }
+
+    public function setMensaje($mensaje){
+        return $this->mensaje = $mensaje;
     }
     
     public function obtenerPuntos(){

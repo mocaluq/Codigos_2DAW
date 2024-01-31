@@ -14,8 +14,16 @@
             return this->dia;
         }
 
+        public function setDia($dis){
+            return $this->dia = $dia;
+        }
+
         public function getEtapa(){
             return this->etapa;
+        }
+
+        public function setEtapa($etapa){
+            return $this->etapa = $etapa;
         }
 
         public function armarCartel(){
