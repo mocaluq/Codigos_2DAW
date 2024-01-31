@@ -21,7 +21,7 @@
             return this->dia;
         }
 
-        public function setDia($dis){
+        public function setDia($dia){
             return $this->dia = $dia;
         }
 
