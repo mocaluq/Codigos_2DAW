@@ -20,6 +20,10 @@ class Carta extends Jugador{
         return $this->puntos;
     }
 
+    public function jugar(){
+        echo "la carta esta en juego";
+    }
+
 }
 
 ?>
