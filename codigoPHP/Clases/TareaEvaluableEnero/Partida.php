@@ -18,7 +18,7 @@
         }
 
         public function getDia(){
-            return this->dia;
+            return $this->dia;
         }
 
         public function setDia($dia){
@@ -26,7 +26,7 @@
         }
 
         public function getEtapa(){
-            return this->etapa;
+            return $this->etapa;
         }
 
         public function setEtapa($etapa){
@@ -46,15 +46,15 @@
         }
 
         public function verCartas(){
-            return this->arrayVerCartas;
+            return $this->arrayVerCartas;
         }
 
         public function verCartasRival(){
-            return this->$arrayCartasRival;
+            return $this->$arrayCartasRival;
         }
 
         public function verCartasTienda(){
-            return this->$arrayCartaTienda;
+            return $this->$arrayCartaTienda;
         }
 
 
