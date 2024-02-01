@@ -1,8 +1,6 @@
 <?php
 
-   // class Partida extends Jugador{
-
-        class Partida {
+    class Partida extends Jugador{
 
         private $dia;
         private $etapa;
