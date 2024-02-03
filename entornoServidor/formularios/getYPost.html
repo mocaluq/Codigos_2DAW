@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8" />
+            <title>Formulario de inscripción</title>
+        </head>
+        <body>
+
+            <!--Con el metodo get vemos los datos directamente por la url-->
+            <form action="../../codigosHTML/accesibilidad/atributoAlt.html" method="get">
+                <label for="firstname"> First Name </label> </br>
+                <input type="text" name="firstname"> </br>
+                <label for="lastname"> Last Name </label> </br>
+                <input type="text" name="lastname"> </br> </br>
+                <input type="submit" value="Submit"> </br> </br>
+            </form>
+
+            <!--Con el metodo pos no vemos los datos por la url, sino que la informacion viaja a 
+                traves del cuerpo de la peticion http-->
+            <form action="../../codigosHTML/accesibilidad/atributoAlt.html" method="post">
+                <label for="firstname"> First Name </label> </br>
+                <input type="text" name="firstname"> </br>
+                <label for="lastname"> Last Name </label> </br>
+                <input type="text" name="lastname"> </br> </br>
+                <input type="submit" value="Submit"> </br> </br>
+            </form>
+
+        </body>
+    </html>
