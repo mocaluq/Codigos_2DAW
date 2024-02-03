@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Empleados.xsl"?>
+
+<empleados>
+    <empleado>
+        <DNI>12345678A</DNI>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez Gómez</apellidos>
+        <sueldo>2500</sueldo>
+    </empleado>
+    <empleado>
+        <DNI>87654321B</DNI>
+        <nombre>María</nombre>
+        <apellidos>Rodríguez López</apellidos>
+        <sueldo>1800</sueldo>
+    </empleado>
+    <empleado>
+        <DNI>98765432C</DNI>
+        <nombre>Carlos</nombre>
+        <apellidos>Martínez García</apellidos>
+        <sueldo>3000</sueldo>
+    </empleado>
+    <empleado>
+        <DNI>56789012D</DNI>
+        <nombre>Laura</nombre>
+        <apellidos>Fernández Sánchez</apellidos>
+        <sueldo>2200</sueldo>
+    </empleado>
+</empleados>
