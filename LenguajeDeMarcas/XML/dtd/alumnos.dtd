@@ -1,0 +1,18 @@
+<!DOCTYPE elemento-raiz SYSTEM "URI">
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE alumnos [
+
+   <!ELEMENT alumnos (nuevos)*>
+
+   <!ELEMENT nuevos (nombre, primerapellido, segundoapellido)>
+
+   <!ELEMENT nombre (#PCDATA)>
+
+   <!ELEMENT primerapellido (#PCDATA)>
+
+   <!ELEMENT segundoapellido (#PCDATA)>
+
+]>

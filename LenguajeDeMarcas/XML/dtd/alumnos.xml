@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE alumnos SYSTEM "alumnos.dtd">
+
+
+
+<alumnos>
+
+   <nuevos>
+
+      <nombre>Juan</nombre>
+
+      <primerapellido>Blanco</primerapellido>
+
+      <segundoapellido>Peral</segundoapellido>
+
+   </nuevos>
+
+   <alumnos>
+
+   <nuevos>
+
+      <nombre>Ana</nombre>
+
+      <primerapellido>Vega</primerapellido>
+
+      <segundoapellido>Luz</segundoapellido>
+
+   </nuevos>
+
+   <alumnos>
+
+   <nuevos>
+
+      <nombre>Noelia</nombre>
+
+      <primerapellido>Cano</primerapellido>
+
+      <segundoapellido>Esera</segundoapellido>
+
+   </nuevos>
+
+</alumnos>
