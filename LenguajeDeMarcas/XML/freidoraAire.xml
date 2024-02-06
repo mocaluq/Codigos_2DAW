@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tienda>
+    <producto codigo="1">
+        <nombre>Freidora de aire</nombre>
+        <descripcion>Producto que permite cocinar sin aceite</descripcion>
+        <precio moneda="€">130</precio>
+        <categoria>
+            <tipologia>Electrodomestico</tipologia>
+            <disponibilidad numero="13">stock</disponibilidad>
+            <imagen>https://www.electroactiva.com/media/catalog/product/cache/1/image/600x600/9df78eab33525d08d6e5fb8d27136e95/m/p/mpm_mfr06_freidora_de_aire_caliente_sin_aceite_4_5_litros_8_programas_cocci_n_panel_digital_termostato_80_-_200_c2_1.jpg</imagen>
+        </categoria>
+    </producto>
+</tienda>
