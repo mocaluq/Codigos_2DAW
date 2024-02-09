@@ -1,0 +1,11 @@
+/*Primera letra de todos los texto mas grande*/
+/*p::first-letter{
+    font-size: 30px;
+}*/
+
+/*Primera letra del primer texto mas grande*/
+p:first-child::first-letter{
+    font-size: 30px;
+    font-family: 'Lucida Sans';
+}
+
