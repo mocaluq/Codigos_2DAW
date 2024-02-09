@@ -1,0 +1,24 @@
+div{
+    display: inline-block;
+    /*Con rgba opacamos el fondo sin influir en el texto*/
+    background-color: rgba(255, 127, 80, 40);
+}
+
+#imagen{
+    color: white;
+    /*2px sombra horizontal, 2px sombra vertical, 4px desenfoque sombra*/
+    text-shadow: 2px 2px 4px black; /* Agrega un borde negro al texto */
+    background-image: url("https://www.mactualidad.com/wp-content/uploads/2013/06/fondo-pantalla-mac-19.jpg");
+}
+
+body{
+    background-color: darkgray;
+    background-image: url("../../imagenes/OIP-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    /*con attachment:fixed hacemos la imagen queda fijada aunque hagamos scroll*/
+    background-attachment: fixed;
+
+    /*TODO ESTO PODEMOS HACERLO DE UNA FORMA CORTA*/
+    /*background: darkgray url("../../imagenes/OIP-removebg-preview.png") no-repeat right top fixed;*/
+}
