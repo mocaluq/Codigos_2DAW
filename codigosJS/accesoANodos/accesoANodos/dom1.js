@@ -9,3 +9,17 @@ for(var i = 0; i < divs.length; i++){
 var divId = document.getElementById("segundoDiv");
 console.log("El id es " + divId);
 
+//ELementos por debajo del segundo div
+
+var ps = divId.getElementsByTagName("p");
+console.log("El número de párrafos "+ ps.length);
+
+for(var i = 0; i < ps.length; i++){
+    var innerHTML = ps[i].innerHTML;
+    console.log("El contenido del párrafo es " + innerHTML);
+}
+
+
+
+
+
