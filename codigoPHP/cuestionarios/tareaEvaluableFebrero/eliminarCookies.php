@@ -6,6 +6,6 @@ foreach ($_COOKIE as $key => $value) {
 }
 // Redirigir al formulario inicial
 header("Location: formulario.html");
-exit;
+exit();
 
 ?>
