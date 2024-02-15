@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicar el color que debe escoger</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div id="resultado">Señala el cuadrado</div>
+
+    <div class="cuadradoRojo" style="width:200px;height:200px;border-style:solid;background-color:red;text-align:center;" 
+        data-color="ROJO">
+        <b>Cuadrado rojo</b>
+    </div>
+
+    <div class="cuadradoVerde" style="width:200px;height:200px;border-style:solid;background-color:green;text-align:center" 
+        data-color="VERDE">
+        <b>Cuadrado verde</b>
+    </div>
+
+    <div class="cuadradoAzul" style="width:200px;height:200px;border-style:solid;background-color:blue;text-align:center" 
+        data-color="AZUL">
+        <b>Cuadrado Azul</b>
+    </div>
+
+    <div class="cuadradoAmarillo" style="width:200px;height:200px;border-style:solid;background-color:yellow;text-align:center" 
+        data-color="AMARILLO">
+        <b>Cuadrado Amarillo</b>
+    </div>
+
+    <div id="colorSeleccionado"></div>
+
+    <script>
+        var colores = ["ROJO", "AMARILLO", "AZUL", "VERDE"];
+        var colorA = "";
+
+        $(document).ready(function(){
+            colorAzar();
+
+            $('.cuadradoRojo, .cuadradoVerde, .cuadradoAzul, .cuadradoAmarillo').click(function(){
+                var colorSeleccionado = $(this).data('color');
+                $('#colorSeleccionado').html("Has seleccionado: " + colorSeleccionado);
+                elegirColor(colorSeleccionado);
+            });
+        });
+
+        function colorAzar(){
+            var colorIndex = Math.floor(Math.random() * colores.length);
+            colorA = colores[colorIndex];
+            $('#resultado').html("Señala el cuadrado " + "<b>" + colorA);
+        }
+
+        function elegirColor(color){
+            if(color == colorA){
+                $('#resultado').html("¡¡BIEN HECHO!!");
+            } else {
+                $('#resultado').html("OOHH HAS FALLADO");
+            }
+        }
+    </script>
+</body>
+</html>
